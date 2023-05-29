@@ -106,7 +106,7 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </td>
                     <td class="auto-style19">
-                        <asp:Label ID="Label6" runat="server" Text="Enter UserID:" Height="76px" Font-Size="26pt" Width="527px" Visible="true"></asp:Label>
+                        <asp:Label ID="Label6" runat="server" Text="USER ID:" Height="76px" Font-Size="26pt" Width="527px" Visible="true"></asp:Label>
                     </td>
                     <td class="auto-style10">&nbsp;</td>
                 </tr>
@@ -125,7 +125,7 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </td>
                     <td class="auto-style19">
-                        <asp:Label ID="Label7" runat="server" Text="Enter Password:" Height="76px" Font-Size="26pt" Width="527px" Visible="true"></asp:Label>
+                        <asp:Label ID="Label7" runat="server" Text="PASSWORD:" Height="76px" Font-Size="26pt" Width="527px" Visible="true"></asp:Label>
                     </td>
                     <td class="auto-style10">&nbsp;</td>
                 </tr>
