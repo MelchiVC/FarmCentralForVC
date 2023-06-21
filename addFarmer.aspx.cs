@@ -25,17 +25,12 @@ namespace FarmCentral
                 SqlCommand comm = new SqlCommand("Insert into Farmer(farmerID, employeeID, firstName, surname, farmerPassword) Values('"+farmerID.Text+ "', '" + LogIn.userID + "', '" + farmerName.Text + "', '" + farmerSurname.Text + "', '" + farmerPassword.Text + "');", con);
                 comm.ExecuteNonQuery();
                 con.Close();
-                ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Farmer succesfully added.');", true); 
-              
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Farmer succesfully added.');", true);
                 
             }
             catch (SqlException)
             {
-               //if statement to ensure that all fields are entered when entering a new farmer
-                if (farmerID.Text.Length == 0 || farmerName.Text.Length == 0 || farmerSurname.Text.Length == 0 || farmerPassword.Text.Length > 4)
-                {
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('ALL FIELDS ARE REQUIRED');", true);
-                }
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Username already exists, please choose another username.');", true);
                 con.Close();
             }
             

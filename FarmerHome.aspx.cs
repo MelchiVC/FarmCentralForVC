@@ -40,17 +40,10 @@ namespace FarmCentral
                 sqlConn.Open();
                 SqlCommand comm = new SqlCommand("Insert into Product(farmerID, ProductName, productType, dateAdded) Values('"+LogIn.userID+ "', '" + productName.Text + "', '" + productType.Text + "', GETDATE());", sqlConn);
                 comm.ExecuteNonQuery();
-                //if statement to ensure that all fields are entered when entering a new product
-                if (productName.Text.Length == 0 || productType.Text.Length == 0)
-                {
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('ALL FIELDS ARE REQUIRED');", true);
-                }
-                else
-                {
-                    sqlConn.Close();
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Product succesfully added.');", true);
-                    Page.Response.Redirect(Page.Request.Url.ToString(), true);
-                }
+                sqlConn.Close();
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Product succesfully added.');", true);
+                Page.Response.Redirect(Page.Request.Url.ToString(), true);
+
             }
             catch (SqlException)
             {

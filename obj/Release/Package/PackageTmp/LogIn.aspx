@@ -134,7 +134,8 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                        
                         </td>
                     <td class="auto-style5">
-                        <asp:TextBox ID="oldPassword" runat="server" Height="76px" Font-Size="26" Width="518px" Visible="true" ></asp:TextBox></td> 
+                        <asp:TextBox ID="oldPassword" runat="server" Height="76px" Font-Size="26" Width="518px" Visible="true" ></asp:TextBox>
+                        
                     <td class="auto-style12">
                         &nbsp;</td>
                 </tr>
@@ -151,7 +152,6 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:Button ID="loginButton0" Height="74px" Font-Size="30" runat="server" Text="LOGIN"  BorderStyle="Ridge" Width="334px" Visible="true" OnClick="loginButton_Click"/>
                     </td>
-                    
                     <td class="auto-style10">&nbsp;</td>
                 </tr>
             </table>
