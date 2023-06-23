@@ -135,7 +135,7 @@
                         </td>
                     <td class="auto-style5">
                         <asp:TextBox ID="oldPassword" runat="server" Height="76px" Font-Size="26" Width="518px" Visible="true" ></asp:TextBox>
-                        
+                        </td>
                     <td class="auto-style12">
                         &nbsp;</td>
                 </tr>

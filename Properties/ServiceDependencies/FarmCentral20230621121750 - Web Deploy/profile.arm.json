@@ -21,7 +21,7 @@
     },
     "resourceName": {
       "type": "string",
-      "defaultValue": "FarmCentral20230529121756",
+      "defaultValue": "FarmCentral20230621121750",
       "metadata": {
         "description": "Name of the main resource to be created by this template."
       }
